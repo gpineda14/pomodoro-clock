@@ -1,0 +1,19 @@
+#time {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 36px;
+}
+
+.container-fluid {
+  margin-top: 200px;
+}
+
+#timerfunctions {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#changetime {
+  text-align: center;
+  font-size: 24px;
+}
