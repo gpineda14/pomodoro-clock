@@ -8,22 +8,31 @@
   <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row" id="timerfunctions">
-      <div class="col-md-6 col-md-offset-3">
-      <button onclick="beginTimer()" class="btn btn-lg">Start</button>
-      <button onclick="pauseTimer()" class="btn btn-lg">Pause</button>
-      <button onclick="resetTimer()" class="btn btn-lg">Reset</button>
-      <button onclick="initializeBreak()" class="btn btn-lg">Break</button>
+  <h1><span>Pomodoro Clock</span></h1>
+  <div class="container">
+    <div class="row" id="clock">
+      <div class="col-md-1 col-md-offset-2">
+        <button id="incrementTime" class="btn btn-lg"><span class="glyphicon glyphicon-triangle-top"></span></button>
+      </div>
+      <div class="col-md-6">
+        <p id="time"></p>
+      </div>
+      <div class="col-md-1">
+        <button id="decrementTime" class="btn btn-lg"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
       </div>
     </div>
-    <div class="row">
-      <p class="col-md-6 col-md-offset-3" id="time"></p>
-    </div>
-    <div class="row" id="changetime">
+    <div class="row" id="timerfunctions">
       <div class="col-md-6 col-md-offset-3">
-      <button onclick="incrementTime()" class="btn btn-lg"><span class="glyphicon glyphicon-triangle-top"></span></button>
-      <button onclick="decrementTime()" class="btn btn-lg"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+      <button id="resumeSession" class="btn btn-lg">
+      Resume</button>
+      <button id="pauseSession"class="btn btn-lg">Pause</button>
+      <button id="resetSession"class="btn btn-lg">Reset</button>
+      </div>
+    </div>
+    <div class="row" id="sessionorbreak">
+      <div class="col-md-6 col-md-offset-3">
+        <button id="sessionState" class="circle btn btn-lg">Session</button>
+        <button id="breakState" class="circle btn btn-lg">Break</button>
       </div>
     </div>
   </div>

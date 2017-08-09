@@ -1,11 +1,17 @@
 #time {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   font-size: 36px;
+  background-color: white;
+  color: black;
 }
 
-.container-fluid {
-  margin-top: 200px;
+.container {
+  background-color: black;
+  margin-top: 50px;
+  border: 1px solid black;
+  height: 60%;
+  width: 50%;
 }
 
 #timerfunctions {
@@ -13,7 +19,32 @@
   text-align: center;
 }
 
-#changetime {
+body {
+  background-color: white;
+}
+
+#sessionorbreak {
   text-align: center;
-  font-size: 24px;
+  margin-top: 10%;
+}
+
+#breakState {
+  border: 1px solid #d9534f;
+}
+
+#sessionState {
+  border: 1px solid #5cb85c;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
