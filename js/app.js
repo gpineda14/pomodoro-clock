@@ -82,10 +82,12 @@ function resumeSession() {
       if (session === true) {
         beginSession("break");
         session = false;
+        changeColor(session);
       }
       else {
         beginSession("session");
         session = true;
+        changeColor(session);
       }
     }
     setTime(time);
